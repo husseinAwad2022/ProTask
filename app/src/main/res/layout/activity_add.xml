@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_dynamic_secondary10"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtTask"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:background="@color/material_dynamic_primary30"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Task"
+            android:inputType="text"
+            android:textColor="@color/material_dynamic_secondary99"
+            android:textColorHint="@color/white"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/txtTime"
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:layout_marginVertical="20dp"
+            android:autoText="false"
+            android:background="@color/material_dynamic_primary40"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Time"
+            android:inputType="time"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="34sp"
+            tools:text="Time" />
+
+        <EditText
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:background="@color/material_dynamic_primary60"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Date"
+            android:inputType="date"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="34sp"
+            tools:text="Date" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="50dp"
+            android:background="@color/design_default_color_error"
+            android:text="Add"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

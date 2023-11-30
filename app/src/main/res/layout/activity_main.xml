@@ -4,15 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/material_dynamic_secondary10"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/txtWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="232dp"
+        android:fontFamily="casual"
+        android:text="Welcome to the ProTask"
+        android:textColor="@color/white"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btnViewList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="37dp"
+        android:background="@color/design_default_color_error"
+        android:text="View List"
+        android:textColor="@color/white"
+        android:textColorLink="@color/design_default_color_error"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddTask"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome" />
+
+    <Button
+        android:id="@+id/btnAddTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="77dp"
+        android:background="?attr/colorAccent"
+        android:text="Add Task"
+        android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnViewList"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
